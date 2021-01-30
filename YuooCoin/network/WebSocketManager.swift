@@ -14,12 +14,16 @@ final class WebSocketManager {
     private var jsonDecoder = JSONDecoder()
     private var jsonEncoder = JSONEncoder()
     
-    func connect(url: URL) {
+    func connect(url: URL)-> Bool {
+        disconnect()
+        
         webSocketTask = URLSession.shared.webSocketTask(with: url)
         webSocketTask?.resume()
-        readMessage { (tickers: [MarketTicker]) in
-            print(tickers)
-        }
+//        readMessage { (tickers: [MarketTicker]) in
+//            print(tickers)
+//        }
+        
+        return webSocketTask != nil
     }
     
     
@@ -46,7 +50,9 @@ final class WebSocketManager {
             switch result {
             case .success(.string(let str)):
                 if let list = try? JSONDecoder().decode(T.self, from: Data(str.utf8)) {
-                    onMessage(list)
+                    DispatchQueue.main.async {
+                        onMessage(list)
+                    }
                     self?.readMessage(onMessage: onMessage)
                 }
 //            case .success(.data(let data)):

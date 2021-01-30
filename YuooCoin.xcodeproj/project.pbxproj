@@ -14,6 +14,7 @@
 		202636C125C52DBA001D4113 /* MarketTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C025C52DBA001D4113 /* MarketTicker.swift */; };
 		202636C825C52DDA001D4113 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C525C52DDA001D4113 /* NetworkManager.swift */; };
 		202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C625C52DDA001D4113 /* WebSocketManager.swift */; };
+		20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9365925C5E24400D55869 /* TickerBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		202636C025C52DBA001D4113 /* MarketTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketTicker.swift; sourceTree = "<group>"; };
 		202636C525C52DDA001D4113 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		202636C625C52DDA001D4113 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		20D9365925C5E24400D55869 /* TickerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 		202636A325C52CE9001D4113 /* YuooCoin */ = {
 			isa = PBXGroup;
 			children = (
+				20D9365325C5E14400D55869 /* views */,
 				202636C325C52DDA001D4113 /* network */,
-				202636B725C52D2B001D4113 /* model */,
+				202636B725C52D2B001D4113 /* models */,
 				202636A425C52CE9001D4113 /* YuooCoinApp.swift */,
 				202636A625C52CE9001D4113 /* ContentView.swift */,
 				202636A825C52CEA001D4113 /* Assets.xcassets */,
@@ -77,12 +80,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		202636B725C52D2B001D4113 /* model */ = {
+		202636B725C52D2B001D4113 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				202636C025C52DBA001D4113 /* MarketTicker.swift */,
 			);
-			path = model;
+			path = models;
 			sourceTree = "<group>";
 		};
 		202636C325C52DDA001D4113 /* network */ = {
@@ -92,6 +95,22 @@
 				202636C625C52DDA001D4113 /* WebSocketManager.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		20D9365325C5E14400D55869 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				20D9365825C5E22600D55869 /* market */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		20D9365825C5E22600D55869 /* market */ = {
+			isa = PBXGroup;
+			children = (
+				20D9365925C5E24400D55869 /* TickerBoard.swift */,
+			);
+			path = market;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +187,7 @@
 				202636A725C52CE9001D4113 /* ContentView.swift in Sources */,
 				202636A525C52CE9001D4113 /* YuooCoinApp.swift in Sources */,
 				202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */,
+				20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
