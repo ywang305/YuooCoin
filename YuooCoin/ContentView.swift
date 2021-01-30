@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+            .padding().onAppear {
+                guard let url = URL(string: "wss://stream.binance.com:9443/ws/!ticker@arr") else { return }
+                WebSocketManager.shared.connect(url: url)
+            }
     }
 }
 
