@@ -8,17 +8,18 @@
 import UIKit
 
 class NetworkManager {
-    static func loadData<T:Codable>(url: URL, completion: @escaping (T?) -> ()) {
+    private static var jsonDecoder = JSONDecoder()
+    
+    static func loadData<T:Codable>(url: URL, completion: @escaping (T) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data, error == nil else {
-                completion(nil)
                 return
             }
             
-            if let response = try? JSONDecoder().decode(T.self, from: data) {
+            if let pojoT = try? jsonDecoder.decode(T.self, from: data) {
                 DispatchQueue.main.async {
-                    completion(response)
+                    completion(pojoT)
                 }
             }
         }.resume()

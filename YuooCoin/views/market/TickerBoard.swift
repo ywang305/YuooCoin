@@ -28,11 +28,14 @@ struct TickerBoard: View {
         NavigationView {
             List(tickers, id: \.s) { ticker in
                 
-                HStack {
+                let extractedExpr = HStack {
                     Text(ticker.s)
+                    Spacer()
+                    DayLineChart()
                     Spacer()
                     Text(ticker.c)
                 }
+                extractedExpr
             }
         }.onAppear(perform: useWebsocket)
     }
