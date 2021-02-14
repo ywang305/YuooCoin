@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in closure #1 in LineChart.body.getter:LineChart.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "first.x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in static NetworkManager.loadData&lt;A&gt;(url:completion:):NetworkManager.swift">
          <PersistentStrings>
             <PersistentString
