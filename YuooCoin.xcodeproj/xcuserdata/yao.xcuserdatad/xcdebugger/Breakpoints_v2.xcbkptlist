@@ -71,54 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E956F939-CAA9-46C4-B06B-597AC9AF19B2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YuooCoin/views/market/DayLineChart.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "E956F939-CAA9-46C4-B06B-597AC9AF19B2 - 333678829decde4a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.Array&lt;Swift.Double&gt;&gt;) -&gt; () in closure #1 () -&gt; () in YuooCoin.DayLineChart.body.getter : some"
-                  moduleName = "YuooCoin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/views/market/DayLineChart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "E956F939-CAA9-46C4-B06B-597AC9AF19B2 - c9f4803d2a2af37d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.Double&gt;) -&gt; Swift.Double in closure #1 (Swift.Array&lt;Swift.Array&lt;Swift.Double&gt;&gt;) -&gt; () in closure #1 () -&gt; () in YuooCoin.DayLineChart.body.getter : some"
-                  moduleName = "YuooCoin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/views/market/DayLineChart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A5879443-3098-49AE-B8E0-A28B6BFA0152"
             shouldBeEnabled = "No"
             ignoreCount = "0"
