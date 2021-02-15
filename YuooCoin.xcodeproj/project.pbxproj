@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		202636C125C52DBA001D4113 /* MarketTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C025C52DBA001D4113 /* MarketTicker.swift */; };
 		202636C825C52DDA001D4113 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C525C52DDA001D4113 /* NetworkManager.swift */; };
 		202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C625C52DDA001D4113 /* WebSocketManager.swift */; };
-		2069E0F025C8DD9E00CC9423 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2069E0EF25C8DD9E00CC9423 /* SwiftUICharts */; };
 		2069E0F325C8E39500CC9423 /* DayLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069E0F225C8E39500CC9423 /* DayLineChart.swift */; };
 		20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9365925C5E24400D55869 /* TickerBoard.swift */; };
 		20E0D5B725D8904800728682 /* TickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D5B625D8904800728682 /* TickerItem.swift */; };
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2069E0F025C8DD9E00CC9423 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +147,6 @@
 			);
 			name = YuooCoin;
 			packageProductDependencies = (
-				2069E0EF25C8DD9E00CC9423 /* SwiftUICharts */,
 			);
 			productName = YuooCoin;
 			productReference = 202636A125C52CE9001D4113 /* YuooCoin.app */;
@@ -179,7 +176,6 @@
 			);
 			mainGroup = 2026369825C52CE9001D4113;
 			packageReferences = (
-				2069E0EE25C8DD9E00CC9423 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 202636A225C52CE9001D4113 /* Products */;
 			projectDirPath = "";
@@ -404,25 +400,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2069E0EE25C8DD9E00CC9423 /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2069E0EF25C8DD9E00CC9423 /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2069E0EE25C8DD9E00CC9423 /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2026369925C52CE9001D4113 /* Project object */;
 }
