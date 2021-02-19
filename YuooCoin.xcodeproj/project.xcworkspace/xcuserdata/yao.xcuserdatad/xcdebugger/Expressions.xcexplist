@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in closure #1 in TickerBoard.body.getter:TickerBoard.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ticker">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in LineChart.body.getter:LineChart.swift">
          <PersistentStrings>
             <PersistentString

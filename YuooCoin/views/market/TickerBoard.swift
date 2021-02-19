@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TickerBoard: View {
+    @ObservedObject var productsStore = ProductsStore()
     @State var tickers:[MarketTicker]=[]
     
     private func useWebsocket() {

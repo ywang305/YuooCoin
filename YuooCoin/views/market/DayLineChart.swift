@@ -9,12 +9,14 @@ import SwiftUI
 import SwiftUICharts
 
 struct DayLineChart: View {
+    var symbol = "BTC-USD"
+    var granularity = 3600
     @State var priceList = [Double]()
     
     
     var body: some View {
         LineChart(data: priceList).onAppear {
-            guard let url = URL(string: "https://api.pro.coinbase.com/products/BTC-USD/candles?granularity=3600") else { return }
+            guard let url = URL(string: "https://api.pro.coinbase.com/products/\(symbol)/candles?granularity=\(granularity)") else { return }
             
             NetworkManager.loadData(url: url) { (data: [[Double]]) in
                 let closeList = data.map{ $0[4] }
