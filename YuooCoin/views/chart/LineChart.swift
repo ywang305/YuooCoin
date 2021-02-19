@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-struct Point {
-    let x: CGFloat
-    let y: CGFloat
-}
 
 struct LineChart: View {
     var data: [Double] = [5.5, 4.32, 15.11, 6.9, 9.77, 12.14, 14.13, 11.5]
