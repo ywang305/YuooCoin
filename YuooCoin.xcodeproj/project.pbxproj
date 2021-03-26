@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201051AE260D570200F38A86 /* MarketStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201051AD260D570200F38A86 /* MarketStore.swift */; };
+		201051B2260D576600F38A86 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201051B1260D576600F38A86 /* ExchangeInfo.swift */; };
 		202636A525C52CE9001D4113 /* YuooCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636A425C52CE9001D4113 /* YuooCoinApp.swift */; };
 		202636A725C52CE9001D4113 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636A625C52CE9001D4113 /* ContentView.swift */; };
 		202636A925C52CEA001D4113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202636A825C52CEA001D4113 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201051AD260D570200F38A86 /* MarketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStore.swift; sourceTree = "<group>"; };
+		201051B1260D576600F38A86 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
 		202636A125C52CE9001D4113 /* YuooCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuooCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		202636A425C52CE9001D4113 /* YuooCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuooCoinApp.swift; sourceTree = "<group>"; };
 		202636A625C52CE9001D4113 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				20B9787325DF4E3B00364785 /* ProductsStore.swift */,
+				201051AD260D570200F38A86 /* MarketStore.swift */,
 			);
 			path = store;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				202636C025C52DBA001D4113 /* MarketTicker.swift */,
 				20B9787825DF4F3000364785 /* Product.swift */,
+				201051B1260D576600F38A86 /* ExchangeInfo.swift */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -225,12 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201051AE260D570200F38A86 /* MarketStore.swift in Sources */,
 				202636C125C52DBA001D4113 /* MarketTicker.swift in Sources */,
 				202636C825C52DDA001D4113 /* NetworkManager.swift in Sources */,
 				20E0D5BB25D8957300728682 /* LineChart.swift in Sources */,
 				202636A725C52CE9001D4113 /* ContentView.swift in Sources */,
 				202636A525C52CE9001D4113 /* YuooCoinApp.swift in Sources */,
 				20B9787925DF4F3000364785 /* Product.swift in Sources */,
+				201051B2260D576600F38A86 /* ExchangeInfo.swift in Sources */,
 				20E0D5B725D8904800728682 /* TickerItem.swift in Sources */,
 				2069E0F325C8E39500CC9423 /* DayLineChart.swift in Sources */,
 				202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */,

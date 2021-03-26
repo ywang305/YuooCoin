@@ -55,13 +55,6 @@ final class WebSocketManager {
                     }
                     self?.readMessage(onMessage: onMessage)
                 }
-//            case .success(.data(let data)):
-//                print(data)
-//                if let response = try? JSONDecoder().decode(T.self, from: data) {
-//                    completion(response)
-//                    self?.readMessage(onMessage: onMessage)
-//                }
-                
             case .failure(let error):
                 print(error)
                 print(error.localizedDescription)

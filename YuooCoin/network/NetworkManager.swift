@@ -17,10 +17,11 @@ class NetworkManager {
                 return
             }
             
-            if let pojoT = try? jsonDecoder.decode(T.self, from: data) {
-                DispatchQueue.main.async {
-                    completion(pojoT)
-                }
+            if let dto = try? jsonDecoder.decode(T.self, from: data) {
+                completion(dto)
+//                DispatchQueue.main.async {
+//                    completion(dto)
+//                }
             }
         }.resume()
     }

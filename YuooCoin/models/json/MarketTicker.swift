@@ -33,4 +33,5 @@ struct MarketTicker: Codable {
     let F: Int
     let L: Int
     let n: Int
+    var symbol: String?
 }

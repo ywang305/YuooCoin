@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct TickerBoard: View {
-    @ObservedObject var productsStore = ProductsStore()
+    @ObservedObject var marketStore = MarketStore()
     @State var tickers:[MarketTicker]=[]
     
-    private func useWebsocket() {
-        print("initing")
+    
+    
+    private func initService() {
+        print("init websocket and data")
+        initWebsocket()
+    }
+    
+    private func initWebsocket() {
         guard let url = URL(string: "wss://stream.binance.com:9443/ws/!ticker@arr") else { return }
         let success = WebSocketManager.shared.connect(url: url)
         if(success) {
@@ -24,6 +30,7 @@ struct TickerBoard: View {
             }
         }
     }
+
     
     var body: some View {
         NavigationView {
@@ -38,7 +45,7 @@ struct TickerBoard: View {
                 }
                 
             }
-        }.onAppear(perform: useWebsocket)
+        }.onAppear(perform: initService)
     }
 }
 
