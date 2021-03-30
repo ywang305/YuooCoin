@@ -26,5 +26,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in MarketStore.subToBinanceTicker():MarketStore.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "found.baseAsset">
+            </PersistentString>
+            <PersistentString
+               value = "self.tickers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

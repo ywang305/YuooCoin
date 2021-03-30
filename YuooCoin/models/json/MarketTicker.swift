@@ -9,9 +9,9 @@ import Foundation
 
 
 
-struct MarketTicker: Codable {
-    let e: String
-    let E: Int
+class MarketTicker: Codable {
+    let e: String?
+    let E: Int?
     let s: String
     let P: String?
     let p: String?
@@ -23,15 +23,15 @@ struct MarketTicker: Codable {
     let B: String?
     let a: String?
     let A: String?
-    let o: String
-    let h: String
-    let l: String
-    let v: String
-    let q: String
-    let O: Int
-    let C: Int
-    let F: Int
-    let L: Int
+    let o: String?
+    let h: String?
+    let l: String?
+    let v: String?
+    let q: String?
+    let O: Int?
+    let C: Int?
+    let F: Int?
+    let L: Int?
     let n: Int
     var symbol: String?
 }

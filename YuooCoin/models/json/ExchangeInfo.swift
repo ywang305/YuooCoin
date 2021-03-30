@@ -11,7 +11,7 @@ struct ExchangeInfo : Codable {
     let symbols: [Symbol]
 }
 
-struct Symbol: Codable {
+struct Symbol: Codable, Hashable {
     let symbol: String
     let baseAsset: String
     let quoteAsset: String

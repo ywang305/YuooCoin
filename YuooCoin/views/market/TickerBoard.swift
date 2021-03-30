@@ -9,35 +9,17 @@ import SwiftUI
 
 struct TickerBoard: View {
     @ObservedObject var marketStore = MarketStore()
-    @State var tickers:[MarketTicker]=[]
     
-    
-    
-    private func initService() {
-        print("init websocket and data")
-        initWebsocket()
+    private var tickers: [MarketTicker] {
+        marketStore.tickers
     }
-    
-    private func initWebsocket() {
-        guard let url = URL(string: "wss://stream.binance.com:9443/ws/!ticker@arr") else { return }
-        let success = WebSocketManager.shared.connect(url: url)
-        if(success) {
-            WebSocketManager.shared.readMessage{ [self] (rcvTickers: [MarketTicker]) in
-                let sorted = rcvTickers.sorted { (t1, t2) in
-                    return t1.n > t2.n  // by trade
-                }
-                tickers = sorted
-            }
-        }
-    }
-
     
     var body: some View {
         NavigationView {
             List(tickers, id: \.s) { ticker in
                 
                 HStack {
-                    Text(ticker.s).frame(width: 100, height: 30, alignment: .leading)
+                    Text(ticker.symbol ?? ticker.s).frame(width: 100, height: 30, alignment: .leading)
                     Spacer()
                     DayLineChart().frame(width: 70, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
@@ -45,7 +27,7 @@ struct TickerBoard: View {
                 }
                 
             }
-        }.onAppear(perform: initService)
+        }
     }
 }
 
