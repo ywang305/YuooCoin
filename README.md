@@ -1,3 +1,5 @@
 # YuooCoin
 YuooCoin, Crypto Currency iOS mobile
-[Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png](./screenshots/Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png)
+
+<img src="./screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20mini%20-%202021-03-30%20at%2000.49.02.png" width="200" height="400"/>
+
