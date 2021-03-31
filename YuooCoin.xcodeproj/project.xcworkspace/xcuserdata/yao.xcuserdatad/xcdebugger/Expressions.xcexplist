@@ -37,5 +37,24 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "property wrapper backing initializer of DayLineChart.priceList:DayLineChart.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "granularity">
+            </PersistentString>
+            <PersistentString
+               value = "self.symbol">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DayLineChart.body.getter:DayLineChart.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "symbol">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
