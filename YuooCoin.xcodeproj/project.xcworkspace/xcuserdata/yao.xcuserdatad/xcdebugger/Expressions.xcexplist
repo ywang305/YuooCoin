@@ -22,7 +22,10 @@
          contextName = "closure #1 in static NetworkManager.loadData&lt;A&gt;(url:completion:):NetworkManager.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSONDecoder().decode(T.self, from: data)">
+               value = "String(data: data, encoding: String.Encoding.utf8)?.replacingOccurrences(of: &quot;\&quot;&quot;, with: &quot;&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "Data(base64Encoded: String(data: data, encoding: String.Encoding.utf8)?.replacingOccurrences(of: &quot;\&quot;&quot;, with: &quot;&quot;) ?? &quot;&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -34,25 +37,6 @@
             </PersistentString>
             <PersistentString
                value = "self.tickers">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "property wrapper backing initializer of DayLineChart.priceList:DayLineChart.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "granularity">
-            </PersistentString>
-            <PersistentString
-               value = "self.symbol">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DayLineChart.body.getter:DayLineChart.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "symbol">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

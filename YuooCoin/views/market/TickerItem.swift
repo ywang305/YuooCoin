@@ -15,7 +15,7 @@ struct TickerItem: View {
         HStack {
             Text(symbol)
             Spacer()
-            DayLineChart(symbol: symbol)
+            DayPriceChart(symbol: symbol)
             Spacer()
             Text(price)
         }

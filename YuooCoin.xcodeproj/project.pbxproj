@@ -17,7 +17,7 @@
 		202636C825C52DDA001D4113 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C525C52DDA001D4113 /* NetworkManager.swift */; };
 		202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C625C52DDA001D4113 /* WebSocketManager.swift */; };
 		2031B01F2612E55800FE982D /* Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2031B01E2612E55800FE982D /* Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png */; };
-		2069E0F325C8E39500CC9423 /* DayLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069E0F225C8E39500CC9423 /* DayLineChart.swift */; };
+		2069E0F325C8E39500CC9423 /* DayPriceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069E0F225C8E39500CC9423 /* DayPriceChart.swift */; };
 		20B9787425DF4E3B00364785 /* ProductsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9787325DF4E3B00364785 /* ProductsStore.swift */; };
 		20B9787925DF4F3000364785 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B9787825DF4F3000364785 /* Product.swift */; };
 		20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9365925C5E24400D55869 /* TickerBoard.swift */; };
@@ -38,7 +38,7 @@
 		202636C525C52DDA001D4113 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		202636C625C52DDA001D4113 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		2031B01E2612E55800FE982D /* Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 mini - 2021-03-30 at 00.49.02.png"; sourceTree = "<group>"; };
-		2069E0F225C8E39500CC9423 /* DayLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayLineChart.swift; sourceTree = "<group>"; };
+		2069E0F225C8E39500CC9423 /* DayPriceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPriceChart.swift; sourceTree = "<group>"; };
 		20B9787325DF4E3B00364785 /* ProductsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsStore.swift; sourceTree = "<group>"; };
 		20B9787825DF4F3000364785 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		20D9365925C5E24400D55869 /* TickerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerBoard.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				20D9365925C5E24400D55869 /* TickerBoard.swift */,
-				2069E0F225C8E39500CC9423 /* DayLineChart.swift */,
+				2069E0F225C8E39500CC9423 /* DayPriceChart.swift */,
 				20E0D5B625D8904800728682 /* TickerItem.swift */,
 			);
 			path = market;
@@ -252,7 +252,7 @@
 				20B9787925DF4F3000364785 /* Product.swift in Sources */,
 				201051B2260D576600F38A86 /* ExchangeInfo.swift in Sources */,
 				20E0D5B725D8904800728682 /* TickerItem.swift in Sources */,
-				2069E0F325C8E39500CC9423 /* DayLineChart.swift in Sources */,
+				2069E0F325C8E39500CC9423 /* DayPriceChart.swift in Sources */,
 				202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */,
 				20B9787425DF4E3B00364785 /* ProductsStore.swift in Sources */,
 				20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */,
