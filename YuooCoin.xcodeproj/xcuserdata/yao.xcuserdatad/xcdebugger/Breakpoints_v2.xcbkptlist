@@ -7,47 +7,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A52ECD6C-F61F-4516-9B82-EC3424E08F91"
+            uuid = "FE9BF27C-BA71-4E28-83CA-F26C4E5C86D2"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YuooCoin/views/market/DayPriceChart.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47E28F52-7364-49F4-AD9C-2C38D973B9F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YuooCoin/views/market/DayPriceChart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "A52ECD6C-F61F-4516-9B82-EC3424E08F91 - 20b499dc6dd668e1"
+                  uuid = "47E28F52-7364-49F4-AD9C-2C38D973B9F3 - 5218344881e1d102"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in YuooCoin.DayPriceChart.body.getter : some"
+                  symbolName = "closure #1 (Swift.Array&lt;YuooCoin.KLine&gt;) -&gt; () in closure #1 () -&gt; () in YuooCoin.DayPriceChart.body.getter : some"
                   moduleName = "YuooCoin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/views/market/DayPriceChart.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "324">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
-                  uuid = "A52ECD6C-F61F-4516-9B82-EC3424E08F91 - 8d2aa37ea0b7b8c6"
+                  uuid = "47E28F52-7364-49F4-AD9C-2C38D973B9F3 - 14b7d913041e4fe4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.Array&lt;Swift.String&gt;&gt;) -&gt; () in closure #1 () -&gt; () in YuooCoin.DayPriceChart.body.getter : some"
+                  symbolName = "closure #1 (YuooCoin.KLine) -&gt; Swift.Double in closure #1 (Swift.Array&lt;YuooCoin.KLine&gt;) -&gt; () in closure #1 () -&gt; () in YuooCoin.DayPriceChart.body.getter : some"
                   moduleName = "YuooCoin"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/views/market/DayPriceChart.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,8 +71,9 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "88D9B7AC-A009-4FD1-B1A0-4103BEF3B378"
+            uuid = "EE9C4C2B-8487-4D89-9C4A-FA70786153DF"
             shouldBeEnabled = "No"
+            condition = "T is KLine"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YuooCoin/network/NetworkManager.swift"
@@ -66,86 +83,6 @@
             endingLineNumber = "16"
             landmarkName = "loadData(url:completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D9926F88-7794-4B7A-B4E8-EDB918EE4467"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YuooCoin/network/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "loadData(url:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DC429701-9786-4EFD-B941-39FE22E96D32"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YuooCoin/network/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "loadData(url:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "19876EE0-3EAF-4C6F-B9F8-F533180A2E10"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YuooCoin/network/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "loadData(url:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "19876EE0-3EAF-4C6F-B9F8-F533180A2E10 - d11539b828b64f17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static YuooCoin.NetworkManager.loadData&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(url: Foundation.URL, completion: (A) -&gt; ()) -&gt; ()"
-                  moduleName = "YuooCoin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/network/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "724">
-               </Location>
-               <Location
-                  uuid = "19876EE0-3EAF-4C6F-B9F8-F533180A2E10 - d11539b828b64f17"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static YuooCoin.NetworkManager.loadData&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(url: Foundation.URL, completion: (A) -&gt; ()) -&gt; ()"
-                  moduleName = "YuooCoin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yao/Codespace/xc/YuooCoin/YuooCoin/network/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "832">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

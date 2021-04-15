@@ -18,10 +18,9 @@ class NetworkManager {
             }
             
             if let dto = try? jsonDecoder.decode(T.self, from: data) {
-                completion(dto)
-//                DispatchQueue.main.async {
-//                    completion(dto)
-//                }
+                DispatchQueue.main.async {
+                    completion(dto)
+                }
             }
             
             
