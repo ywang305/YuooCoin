@@ -10,7 +10,7 @@ import UIKit
 import Combine
 
 class MarketStore : ObservableObject {
-    @Published var exchangePairs = Set<ExchangePair>()
+    @Published var symbolMap = [String : ExchangePair]()
     @Published var tickers:[MarketTicker]=[]
     
     init() {
@@ -20,8 +20,10 @@ class MarketStore : ObservableObject {
     
     private func getExchangePair() {
         guard let url = URL(string: "http://34.238.234.55/exchangeInfo/pairs") else { return }
-        NetworkManager.loadData(url: url){ (data: [ExchangePair]) in
-            self.exchangePairs = Set(data)
+        NetworkManager.loadData(url: url){ [self] (data: [ExchangePair]) in
+            data.forEach{
+                symbolMap[$0.coin + $0.baseCoin]=$0
+            }
         }
     }
     

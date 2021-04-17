@@ -14,13 +14,14 @@ struct TickerBoard: View {
         marketStore.tickers
     }
     
+    
     var body: some View {
         NavigationView {
             List(tickers, id: \.s) { ticker in
                 HStack {
-                    Text(ticker.symbol ?? ticker.s).frame(width: 100, height: 30, alignment: .leading)
+                    Text(ticker.s).frame(width: 100, height: 30, alignment: .leading)
                     Spacer()
-                    DayPriceChart(symbol: ticker.symbol ?? "").frame(width: 70, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    DayPriceChart(symbol: ticker.s).frame(width: 70, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
                     Text(ticker.c).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 30, alignment: .leading)
                 }

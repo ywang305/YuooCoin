@@ -11,7 +11,7 @@ import SwiftUI
 struct LineChart: View {
     var data: [Double] = [5.5, 4.32, 15.11, 6.9, 9.77, 12.14, 14.13, 11.5]
     var color: Color = .black
-    var lineWidth: CGFloat = 2
+    var lineWidth: CGFloat = 0.5
     
     private var list: [CGPoint] {
         data.enumerated().map{ CGPoint(x: Double($0), y: $1) }

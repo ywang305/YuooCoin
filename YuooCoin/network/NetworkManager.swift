@@ -23,8 +23,6 @@ class NetworkManager {
                 }
             }
             
-            
-            
         }.resume()
     }
     
