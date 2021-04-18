@@ -18,8 +18,8 @@
 		202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202636C625C52DDA001D4113 /* WebSocketManager.swift */; };
 		203428E82627C929004E3A1D /* ExchangePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203428E72627C929004E3A1D /* ExchangePair.swift */; };
 		203428EB2627C9CD004E3A1D /* KLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203428EA2627C9CD004E3A1D /* KLine.swift */; };
-		2069E0F325C8E39500CC9423 /* DayPriceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2069E0F225C8E39500CC9423 /* DayPriceChart.swift */; };
-		20A9503F262B6AA7000751D9 /* devshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 20A9503E262B6AA7000751D9 /* devshot.png */; };
+		20BDF64C262CAF07008BF0C8 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BDF64B262CAF07008BF0C8 /* Stat.swift */; };
+		20BDF652262CD49C008BF0C8 /* Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BDF651262CD49C008BF0C8 /* Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png */; };
 		20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9365925C5E24400D55869 /* TickerBoard.swift */; };
 		20E0D5B725D8904800728682 /* TickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D5B625D8904800728682 /* TickerItem.swift */; };
 		20E0D5BB25D8957300728682 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D5BA25D8957300728682 /* LineChart.swift */; };
@@ -39,8 +39,8 @@
 		202636C625C52DDA001D4113 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		203428E72627C929004E3A1D /* ExchangePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangePair.swift; sourceTree = "<group>"; };
 		203428EA2627C9CD004E3A1D /* KLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLine.swift; sourceTree = "<group>"; };
-		2069E0F225C8E39500CC9423 /* DayPriceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPriceChart.swift; sourceTree = "<group>"; };
-		20A9503E262B6AA7000751D9 /* devshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = devshot.png; sourceTree = "<group>"; };
+		20BDF64B262CAF07008BF0C8 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		20BDF651262CD49C008BF0C8 /* Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png"; sourceTree = "<group>"; };
 		20D9365925C5E24400D55869 /* TickerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerBoard.swift; sourceTree = "<group>"; };
 		20E0D5B625D8904800728682 /* TickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerItem.swift; sourceTree = "<group>"; };
 		20E0D5BA25D8957300728682 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		2031B01D2612E52900FE982D /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				20A9503E262B6AA7000751D9 /* devshot.png */,
+				20BDF651262CD49C008BF0C8 /* Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png */,
 			);
 			path = screenshots;
 			sourceTree = "<group>";
@@ -138,6 +138,7 @@
 				201051B1260D576600F38A86 /* ExchangeInfo.swift */,
 				203428E72627C929004E3A1D /* ExchangePair.swift */,
 				203428EA2627C9CD004E3A1D /* KLine.swift */,
+				20BDF64B262CAF07008BF0C8 /* Stat.swift */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -155,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				20D9365925C5E24400D55869 /* TickerBoard.swift */,
-				2069E0F225C8E39500CC9423 /* DayPriceChart.swift */,
 				20E0D5B625D8904800728682 /* TickerItem.swift */,
 			);
 			path = market;
@@ -231,8 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				202636AC25C52CEA001D4113 /* Preview Assets.xcassets in Resources */,
+				20BDF652262CD49C008BF0C8 /* Simulator Screen Shot - iPhone 12 mini - 2021-04-18 at 16.56.14.png in Resources */,
 				202636A925C52CEA001D4113 /* Assets.xcassets in Resources */,
-				20A9503F262B6AA7000751D9 /* devshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +253,7 @@
 				201051B2260D576600F38A86 /* ExchangeInfo.swift in Sources */,
 				203428EB2627C9CD004E3A1D /* KLine.swift in Sources */,
 				20E0D5B725D8904800728682 /* TickerItem.swift in Sources */,
-				2069E0F325C8E39500CC9423 /* DayPriceChart.swift in Sources */,
+				20BDF64C262CAF07008BF0C8 /* Stat.swift in Sources */,
 				202636C925C52DDA001D4113 /* WebSocketManager.swift in Sources */,
 				20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */,
 			);

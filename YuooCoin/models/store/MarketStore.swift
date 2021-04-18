@@ -10,20 +10,28 @@ import UIKit
 import Combine
 
 class MarketStore : ObservableObject {
-    @Published var symbolMap = [String : ExchangePair]()
+    @Published var symbolDict = [String : ExchangePair]()
     @Published var tickers:[MarketTicker]=[]
+    @Published var stats: [Stat] = []
     
     init() {
         self.getExchangePair()
         self.subscribeToBinanceTicker()
+        //self.getStat()
     }
     
     private func getExchangePair() {
         guard let url = URL(string: "http://34.238.234.55/exchangeInfo/pairs") else { return }
         NetworkManager.loadData(url: url){ [self] (data: [ExchangePair]) in
             data.forEach{
-                symbolMap[$0.coin + $0.baseCoin]=$0
+                symbolDict[$0.coin + $0.baseCoin]=$0
             }
+        }
+    }
+    private func getStat() {
+        guard let url = URL(string: "https://api.binance.com/api/v3/ticker/24hr") else {return}
+        NetworkManager.loadData(url: url){ [self] (data: [Stat]) in
+            stats = data
         }
     }
     
@@ -39,5 +47,7 @@ class MarketStore : ObservableObject {
             }
         }
     }
+    
+    
     
 }

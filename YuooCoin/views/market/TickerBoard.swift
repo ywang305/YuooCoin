@@ -13,18 +13,24 @@ struct TickerBoard: View {
     private var tickers: [MarketTicker] {
         marketStore.tickers
     }
+    private var symbolDict: [String : ExchangePair] {
+        marketStore.symbolDict
+    }
+    
     
     
     var body: some View {
         NavigationView {
             List(tickers, id: \.s) { ticker in
-                HStack {
-                    Text(ticker.s).frame(width: 100, height: 30, alignment: .leading)
-                    Spacer()
-                    DayPriceChart(symbol: ticker.s).frame(width: 70, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                    Text(ticker.c).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 30, alignment: .leading)
+                if let pair = symbolDict[ticker.s] {
+                    NavigationLink( destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        TickerItem( dispSymbol: pair.coin+"/"+pair.baseCoin,
+                                    price: ticker.c,
+                                    volume: String(ticker.n)
+                                    )
+                    }
                 }
+                
                 
             }
         }

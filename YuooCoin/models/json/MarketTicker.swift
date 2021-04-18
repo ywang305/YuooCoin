@@ -26,12 +26,11 @@ class MarketTicker: Codable {
     let o: String?
     let h: String?
     let l: String?
-    let v: String?
+    let v: String
     let q: String?
     let O: Int?
     let C: Int?
     let F: Int?
     let L: Int?
     let n: Int
-    var symbol: String?
 }
