@@ -19,6 +19,7 @@
 		203428E82627C929004E3A1D /* ExchangePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203428E72627C929004E3A1D /* ExchangePair.swift */; };
 		203428EB2627C9CD004E3A1D /* KLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203428EA2627C9CD004E3A1D /* KLine.swift */; };
 		208FDEDF262E83A700C00ACA /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FDEDE262E83A700C00ACA /* Trade.swift */; };
+		208FDEE5262E8A1A00C00ACA /* 2021-04-19.png in Resources */ = {isa = PBXBuildFile; fileRef = 208FDEE4262E8A1A00C00ACA /* 2021-04-19.png */; };
 		20BDF64C262CAF07008BF0C8 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BDF64B262CAF07008BF0C8 /* Stat.swift */; };
 		20BDF652262CD49C008BF0C8 /* 2021-04-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BDF651262CD49C008BF0C8 /* 2021-04-18.png */; };
 		20D9365A25C5E24400D55869 /* TickerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9365925C5E24400D55869 /* TickerBoard.swift */; };
@@ -41,6 +42,7 @@
 		203428E72627C929004E3A1D /* ExchangePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangePair.swift; sourceTree = "<group>"; };
 		203428EA2627C9CD004E3A1D /* KLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLine.swift; sourceTree = "<group>"; };
 		208FDEDE262E83A700C00ACA /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		208FDEE4262E8A1A00C00ACA /* 2021-04-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-19.png"; sourceTree = "<group>"; };
 		20BDF64B262CAF07008BF0C8 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		20BDF651262CD49C008BF0C8 /* 2021-04-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2021-04-18.png"; sourceTree = "<group>"; };
 		20D9365925C5E24400D55869 /* TickerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerBoard.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		2031B01D2612E52900FE982D /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				208FDEE4262E8A1A00C00ACA /* 2021-04-19.png */,
 				20BDF651262CD49C008BF0C8 /* 2021-04-18.png */,
 			);
 			path = screenshots;
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				202636AC25C52CEA001D4113 /* Preview Assets.xcassets in Resources */,
+				208FDEE5262E8A1A00C00ACA /* 2021-04-19.png in Resources */,
 				20BDF652262CD49C008BF0C8 /* 2021-04-18.png in Resources */,
 				202636A925C52CEA001D4113 /* Assets.xcassets in Resources */,
 			);
