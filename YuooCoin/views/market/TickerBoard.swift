@@ -23,7 +23,7 @@ struct TickerBoard: View {
         NavigationView {
             List(tickers, id: \.s) { ticker in
                 if let pair = symbolDict[ticker.s] {
-                    NavigationLink( destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink( destination: Trade(pair: "\(pair.coin)_\(pair.baseCoin)")) {
                         TickerItem( dispSymbol: pair.coin+"/"+pair.baseCoin,
                                     price: ticker.c,
                                     volume: String(ticker.n)
