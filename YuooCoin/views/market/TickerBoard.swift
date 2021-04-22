@@ -10,31 +10,46 @@ import SwiftUI
 struct TickerBoard: View {
     @ObservedObject var marketStore = MarketStore()
     
-    private var tickers: [MarketTicker] {
-        marketStore.tickers
-    }
-    private var symbolDict: [String : ExchangePair] {
-        marketStore.symbolDict
+    private var tickerDict: [String: MarketTicker] {
+        var dict = [String:MarketTicker]()
+        marketStore.tickers.forEach{ dict[$0.s]=$0 }
+        return dict
     }
     
+    private var symbolInfos: [SymbolInfo] {
+        marketStore.pairs.map{ pair in
+            let coin = pair.coin
+            let base = pair.baseCoin
+            let found = tickerDict[coin+base]
+            return SymbolInfo(
+                id: coin+base,
+                    dispSymbol: coin+"/"+base,
+                    tradePair: coin+"_"+base,
+                    price: found?.c ?? "",
+                    volume: found?.n ?? 0)
+        }.sorted{ $0.volume > $1.volume  }
+    }
     
     
     var body: some View {
         NavigationView {
-            List(tickers, id: \.s) { ticker in
-                if let pair = symbolDict[ticker.s] {
-                    NavigationLink( destination: Trade(pair: "\(pair.coin)_\(pair.baseCoin)")) {
-                        TickerItem( dispSymbol: pair.coin+"/"+pair.baseCoin,
-                                    price: ticker.c,
-                                    volume: String(ticker.n)
-                                    )
-                    }
+            List(symbolInfos) { info in
+                NavigationLink(destination: Trade(pair: info.tradePair)) {
+                    TickerItem (dispSymbol: info.dispSymbol,
+                                price: info.price,
+                                volume: String(info.volume))
                 }
-                
-                
             }
         }
     }
+}
+
+private struct SymbolInfo : Identifiable {
+    let id: String
+    let dispSymbol: String
+    let tradePair: String
+    let price: String
+    let volume: Int
 }
 
 struct TickerBoard_Previews: PreviewProvider {

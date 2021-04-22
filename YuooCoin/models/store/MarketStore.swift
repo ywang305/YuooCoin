@@ -10,9 +10,9 @@ import UIKit
 import Combine
 
 class MarketStore : ObservableObject {
-    @Published var symbolDict = [String : ExchangePair]()
     @Published var tickers:[MarketTicker]=[]
     @Published var stats: [Stat] = []
+    @Published var pairs: [ExchangePair] = []
     
     init() {
         self.getExchangePair()
@@ -23,9 +23,7 @@ class MarketStore : ObservableObject {
     private func getExchangePair() {
         guard let url = URL(string: "http://34.238.234.55/exchangeInfo/pairs") else { return }
         NetworkManager.loadData(url: url){ [self] (data: [ExchangePair]) in
-            data.forEach{
-                symbolDict[$0.coin + $0.baseCoin]=$0
-            }
+            pairs = data
         }
     }
     private func getStat() {
@@ -40,10 +38,7 @@ class MarketStore : ObservableObject {
         let success = WebSocketManager.shared.connect(url: url)
         if(success) {
             WebSocketManager.shared.readMessage{ [self] (rcvTickers: [MarketTicker]) in
-                let sorted = rcvTickers.sorted { (t1, t2) in
-                    return t1.n > t2.n  // by trade
-                }
-                tickers = sorted
+                tickers = rcvTickers
             }
         }
     }
