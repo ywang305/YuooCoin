@@ -39,7 +39,7 @@ struct TickerBoard: View {
                                 price: info.price,
                                 volume: String(info.volume))
                 }
-            }
+            }.navigationTitle("Market")
         }
     }
 }

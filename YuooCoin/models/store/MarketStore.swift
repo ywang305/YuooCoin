@@ -37,7 +37,7 @@ class MarketStore : ObservableObject {
         guard let url = URL(string: "wss://stream.binance.com:9443/ws/!ticker@arr") else { return }
         let success = WebSocketManager.shared.connect(url: url)
         if(success) {
-            WebSocketManager.shared.readMessage{ [self] (rcvTickers: [MarketTicker]) in
+            WebSocketManager.shared.readMessage(after: 30){ [self] (rcvTickers: [MarketTicker]) in
                 tickers = rcvTickers
             }
         }
