@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-struct TickerItem: View {
+struct TickerItem: View, Equatable {
+    static func == (lhs: TickerItem, rhs: TickerItem) -> Bool {
+        lhs.dispSymbol == rhs.dispSymbol
+            && lhs.price == rhs.price &&
+            lhs.volume == rhs.volume
+    }
+    
     var dispSymbol: String="BTC/USDT"
     var price: String="6000201.820934234"
     var volume: String = "90.000101000111101"
