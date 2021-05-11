@@ -14,7 +14,7 @@ struct Tabs: View {
             TickerBoard()
                 .tabItem { Image(systemName: "chart.bar").tag(1) }
             Text("2nd Tab Content")
-                .tabItem { Image(systemName: "link") }
+                .tabItem { Image(systemName: "bitcoinsign.circle") }
                 .tag(2)
             Text("user")
                 .tabItem { Image(systemName: "person")
